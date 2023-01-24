@@ -29,10 +29,25 @@
   margin-right: 20px;
   font-size: 15px;
 }
+.header__explore {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(236, 236, 236);
+}
 .header__font_text {
   color: #313031;
-  font-weight: 400;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.header__font_text.banniere {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 25px;
+}
+.header__font_text.localisation {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
