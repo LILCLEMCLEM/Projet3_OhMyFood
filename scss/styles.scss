@@ -16,7 +16,7 @@ $color-tertiaire: #99E2D0;
         
         width: 45%;
         padding-top: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
    
         }
 
@@ -28,9 +28,9 @@ $color-tertiaire: #99E2D0;
         justify-content: center;
         align-items: center;
         background-color: rgb(231, 230, 230);
-        height: 50px;
+        height: 45px;
         .fa-solid{
-            color:#313031;
+            color:#413f41;
             margin-right: 20px;
             font-size: 15px;
             
@@ -39,19 +39,39 @@ $color-tertiaire: #99E2D0;
         
     }
 
+    &__button{
+        margin-top: 30px;
+        align-self: center;
+        border-radius: 55px;
+        border: hidden;
+        width: 60%;
+        height: 45px;
+        color:#f3f3f3;
+        font-size: 16px;
+        font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+        background: -moz-linear-gradient(-100%, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        background: -webkit-linear-gradient(-10deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        background: linear-gradient(175deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.2)
+    }
+
     &__explore{
         display: flex;
-        justify-content: center;
+        padding-top: 25px;
+        justify-content: flex-start;
+        flex-direction: column;
         width: 100%;
-        height: 200px;
-        background-color: rgb(236, 236, 236);
+        height: 250px;
+        background-color: rgb(238, 238, 238);
     }
 
     &__font_text{
-        color:#313031;
+        color:black;
         font-family: 'Roboto' , Arial, Helvetica, sans-serif;
         &.banniere{
-            margin-top: 16px;
+            width: 80%;
+            align-self: center;
+            font-weight: 900;
             text-align: center;
             font-size: 25px;
             
@@ -60,7 +80,24 @@ $color-tertiaire: #99E2D0;
         &.localisation
         {
             font-size: 16px;
-            font-weight: 400;
+            font-weight: bolder;
+            
         }
+
+        &.basic_text{
+            margin-top: 20px;
+            font-weight: 300;
+            align-self: center;
+            width: 80%;
+            
+            font-size: 18px;
+            text-align: center;
+        }
+
+        
+
     }
+
+    
+    
 }
