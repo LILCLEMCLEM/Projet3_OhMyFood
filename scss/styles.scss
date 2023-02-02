@@ -4,6 +4,7 @@ $color-tertiaire: #99E2D0;
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 .header{
     display: flex;
@@ -98,6 +99,217 @@ $color-tertiaire: #99E2D0;
 
     }
 
+    
+    
+}
+
+.fonctionnement
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+        width: 100%;
+
+        &_title{
+            align-self: flex-start;
+           
+            font-weight: 800;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width: 50%;
+            
+            
+        }
+
+        &_container{
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 70px;
+            margin-bottom: 20px;
+            border-radius: 0.5cm;
+            background-color: #f0eded;
+            box-shadow: 10px 11px 9px 0px rgba(0,0,0,0.13);
+        }
+
+        &_number
+        {
+            font-weight: 400;
+            font-size: 13px;
+            position: relative;
+            right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 0.5cm;
+            width: 23px;
+            height: 23px;
+            background-color: #9356ac;
+        }
+
+        &_text
+        {
+            font-weight: 700;
+        }
+
+        & .fa-solid
+        {
+            font-size: 18px;
+            margin-left: 14px;
+            margin-right: 24px;
+            color: rgb(95, 95, 95);
+        }
+
+        
+    }
+
+.Restaurant{
+    display: flex;
+    background-color: rgb(230, 229, 229);
+    font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    &_title{
+        align-self: flex-start;
+        font-weight: 800;
+        font-size: 24px;
+        padding-top: 40px;
+        margin-left: 20px;
+        
+        width: 50%;
+        
+        
+    }
+
+    &_container
+    {
+        margin-bottom: 15px;
+        display: flex;
+        background-color: #ffffff;
+        width: 90%;
+        height: 220px;
+        align-items: center;
+        border-radius: 0.5cm;
+        flex-direction: column;
+    }
+
+    &_img
+    {
+        object-fit: cover;
+        justify-content: flex-start;
+        border-radius: 0.5cm;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width:100%;
+        height: 150px;
+    }
+
+    & .Restaurant_new{
+        font-size: 14px;
+        font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+        color: #27866e;
+        position: relative;
+        top: 40px;
+        left: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99E2D0;
+        width: 80px;
+        height: 30px;
+        border-radius: 0.1cm;
+    }
+
+    &_box
+    {
+        align-items: flex-start;
+        width: 90%;
+        &_card_title{
+        
+            width: 90%;
+            justify-content: flex-start;
+            font-size: 16px;
+            font-weight: 700;
+            padding-top: 10px;
+    
+        }
+
+        &_visibility{
+            position: relative;
+            left: 280px;
+            top: -40px;
+            
+            width: 30px;
+
+            & .fa-regular
+            {
+                
+                
+                display: flex;
+                justify-content: end;
+                font-size: 22px;
+                visibility: visible;
+                
+            }
+
+            & .fa-solid.fa-heart{
+                background: -webkit-radial-gradient(-10deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+                background: radial-gradient(circle at 33% 100%, #ee65d7f5 4%, #ba4dc4 30%, #bb2cf3 62%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            display: flex;
+            color: purple;
+            justify-content: end;
+            font-size: 0px;
+            visibility: hidden;
+
+            }
+        }
+
+        &_visibility:hover
+        {
+            & .fa-regular.fa-heart{
+                visibility: hidden;
+                font-size: 0px;
+            }
+
+            & .fa-solid.fa-heart{
+                visibility: visible;
+                font-size: 22px;
+            }
+        }
+    
+        &_lieu{
+            width: 90%;
+            justify-content: flex-start;
+            font-size: 16px;
+            font-weight: 300;
+            padding-top: 5px;
+    
+        }
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    }
+    
     
     
 }
