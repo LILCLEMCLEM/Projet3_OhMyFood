@@ -298,18 +298,52 @@ $color-tertiaire: #99E2D0;
         }
 
         
+     
         
+    }   
+    padding-bottom: 30px;
+    
+}
 
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #413f41;
+    height: 175px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    &_img{
         
-
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 85px;
+        height: 20px;
         
-
-        
-
-        
-
     }
-    
-    
-    
+    &_element{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 20px;
+        .fa-solid
+        {
+            font-size: 12px;
+            color: white;
+        }
+
+        .footer_text{
+            font-weight: 300;
+            margin-left: 10px;
+            font-size: 14px;
+            color: white;
+            font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+        }
+
+        .footer_text:nth-child(1){
+            margin-left: 0px;
+        }
+    }
+
+
 }
