@@ -1,0 +1,207 @@
+$color-primaire: #9356DC;
+$color-secondaire: #FF79DA;
+$color-tertiaire: #99E2D0;
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+    
+    &__logo{
+    
+        width: 45%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+   
+        }
+
+   
+     
+    &_img{
+        
+        width: 100%;
+        height: 300px;
+       } 
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    margin-top: -50px;
+    
+    background-color: rgb(240, 240, 240);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+   
+    &_header{
+        display: flex;
+        padding-top: 25px;
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        
+        .main_name{
+            
+            font-size: 26px;
+            font-family: Shrikhand , Arial, Helvetica, sans-serif;
+            font-weight: 400;          
+            
+            
+            
+        }
+
+        .fa-heart
+        {
+            margin-top: 10px;
+            margin-right: 20px;
+            font-size: 26px;
+            display: flex;
+            justify-content: flex-end;
+            
+            
+        }
+
+    }
+
+    .menu{
+        
+        
+        width: 95%;
+        &_plat{
+            
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            & .menu_title{
+                font-size: 20px;
+                font-family: Roboto , Arial, Helvetica, sans-serif;
+                font-weight: 300;
+ 
+                bottom: 0;
+                border-bottom: 3px solid #99E2D0;
+                width: 10%;
+                margin-bottom: 2px;
+
+                
+            }
+
+            &_container{
+                margin-top: 10px;
+                width: 100%;
+                background-color: white;
+                border-radius: 0.7em;
+                height: 70px;
+                &_list{
+
+                & .menu_text{
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    font-family: Roboto , Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                & .menu_items
+                {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 90%;
+                    font-family: Roboto , Arial, Helvetica, sans-serif;
+
+                    & .menu_ingredient{
+                       
+                        margin-left: 10px;
+                        
+                    }
+    
+                    & .menu_price{
+                        font-weight: 700;
+                        
+                    }
+                }
+            }
+
+                
+            }
+
+        }
+    }
+
+    &__button{
+        margin-bottom: 40px;
+        margin-top: 0px;
+        align-self: center;
+        border-radius: 55px;
+        border: hidden;
+        width: 60%;
+        height: 45px;
+        color:#f3f3f3;
+        font-size: 16px;
+        font-family: 'Roboto' ,Arial, Helvetica, sans-serif;
+        background: -moz-linear-gradient(-100%, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        background: -webkit-linear-gradient(-10deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        background: linear-gradient(175deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+        box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.2)
+    }
+    
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #413f41;
+    height: 175px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    &_img{
+        
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 85px;
+        height: 20px;
+        
+    }
+    &_element{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-left: 20px;
+        .fa-solid
+        {
+            font-size: 12px;
+            color: white;
+        }
+
+        .footer_text{
+            font-weight: 300;
+            margin-left: 10px;
+            font-size: 14px;
+            color: white;
+            font-family: 'Roboto' , Arial, Helvetica, sans-serif;
+        }
+
+        .footer_text:nth-child(1){
+            margin-left: 0px;
+        }
+    }
+
+
+}
