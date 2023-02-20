@@ -8,6 +8,65 @@ $color-tertiaire: #99E2D0;
 
 }
 
+@keyframes fadein {
+    
+    from {
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    
+    from {
+        opacity:0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@mixin fade-transition(){
+    
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+           
+            transition: 1s;
+            
+            animation: fadein 1s #{1/4 *$i}s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+
 .header {
     display: flex;
     flex-direction: column;
@@ -19,12 +78,9 @@ $color-tertiaire: #99E2D0;
     &_name{
        
        display: grid;
-       align-items: center;
-      
-       
+       align-items: center;    
        width: 90%;
        
-
        & .fa-arrow-left
        {
 
@@ -104,6 +160,8 @@ $color-tertiaire: #99E2D0;
         width: 95%;
 
         &_plat {
+           
+            
 
             margin-bottom: 30px;
             display: flex;
@@ -122,8 +180,14 @@ $color-tertiaire: #99E2D0;
 
 
             }
+            
 
             &_container {
+                opacity: 0;
+                @include fade-transition();
+
+
+
                 margin-top: 10px;
                 width: 100%;
                 background-color: white;
@@ -234,6 +298,8 @@ $color-tertiaire: #99E2D0;
 
 
             }
+
+            
 
         }
     }
