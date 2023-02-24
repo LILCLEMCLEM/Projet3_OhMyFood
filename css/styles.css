@@ -11,6 +11,22 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .loader {
   flex-direction: column;
   display: flex;
@@ -39,7 +55,7 @@
 }
 .loader .fa-solid:nth-child(3) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: -2px;
@@ -54,7 +70,7 @@
 }
 .loader .fa-solid:nth-child(5) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: 18px;
@@ -84,7 +100,7 @@
 }
 .loader .fa-solid:nth-child(9) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: 58px;
@@ -92,14 +108,14 @@
 }
 .loader .fa-solid:nth-child(10) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   font-size: 32px;
   top: 100px;
   left: -130px;
 }
 .loader .fa-solid:nth-child(11) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: 78px;
@@ -107,14 +123,14 @@
 }
 .loader .fa-solid:nth-child(12) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   font-size: 32px;
   top: 120px;
   left: -130px;
 }
 .loader .fa-solid:nth-child(13) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: 98px;
@@ -122,14 +138,14 @@
 }
 .loader .fa-solid:nth-child(14) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   font-size: 32px;
   top: 140px;
   left: -130px;
 }
 .loader .fa-solid:nth-child(15) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   font-size: 32px;
   left: 130px;
   top: 118px;
@@ -137,7 +153,7 @@
 }
 .loader .fa-solid:nth-child(16) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   font-size: 32px;
   top: 160px;
   left: -130px;

@@ -29,6 +29,30 @@ $color-tertiaire: #99E2D0;
    
 }
 
+@-webkit-keyframes anim_ustecils{
+    from{
+       
+        transform: rotate(0deg)
+    }
+    to{
+        
+        transform: rotate(360deg)
+    }
+   
+}
+
+@-moz-keyframes anim_ustecils{
+    from{
+       
+        transform: rotate(0deg)
+    }
+    to{
+        
+        transform: rotate(360deg)
+    }
+   
+}
+
 
 
 
