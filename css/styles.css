@@ -3,6 +3,161 @@
   padding: 0px;
 }
 
+@keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  position: absolute;
+  background-color: #99E2D0;
+  width: 100%;
+  height: 188%;
+  transition: 0s;
+  animation: load 5s 3s;
+  animation-fill-mode: forwards;
+}
+.loader_img {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  width: 80%;
+  height: 60px;
+}
+.loader .fa-solid:nth-child(2) {
+  position: relative;
+  animation: anim_ustecils 4s 0.5s infinite;
+  font-size: 32px;
+  top: 20px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(3) {
+  position: relative;
+  animation: anim_ustecils 2s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: -2px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(4) {
+  position: relative;
+  animation: anim_ustecils 1s 0.5s infinite;
+  font-size: 32px;
+  top: 40px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(5) {
+  position: relative;
+  animation: anim_ustecils 4s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 18px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(6) {
+  position: relative;
+  animation: anim_ustecils 1s 0.5s infinite;
+  font-size: 32px;
+  top: 60px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(7) {
+  position: relative;
+  animation: anim_ustecils 2s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 38px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(8) {
+  position: relative;
+  animation: anim_ustecils 4s 0.5s infinite;
+  font-size: 32px;
+  top: 80px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(9) {
+  position: relative;
+  animation: anim_ustecils 3s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 58px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(10) {
+  position: relative;
+  animation: anim_ustecils 4s 0.5s infinite;
+  font-size: 32px;
+  top: 100px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(11) {
+  position: relative;
+  animation: anim_ustecils 1s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 78px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(12) {
+  position: relative;
+  animation: anim_ustecils 2s 0.5s infinite;
+  font-size: 32px;
+  top: 120px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(13) {
+  position: relative;
+  animation: anim_ustecils 4s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 98px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(14) {
+  position: relative;
+  animation: anim_ustecils 3s 0.5s infinite;
+  font-size: 32px;
+  top: 140px;
+  left: -130px;
+}
+.loader .fa-solid:nth-child(15) {
+  position: relative;
+  animation: anim_ustecils 2s 0.5s infinite;
+  font-size: 32px;
+  left: 130px;
+  top: 118px;
+  margin-bottom: 10px;
+}
+.loader .fa-solid:nth-child(16) {
+  position: relative;
+  animation: anim_ustecils 1s 0.5s infinite;
+  font-size: 32px;
+  top: 160px;
+  left: -130px;
+}
+.loader_name {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+}
+
+@keyframes load {
+  10% {
+    opacity: 10;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -24,16 +179,6 @@
   }
 }
 @-webkit-keyframes fadein { /* sur Safari et Chrome */
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-@-o-keyframes fadein { /* sur Opera */
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -97,12 +242,54 @@
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
-.main_header .fa-heart {
+.main_header .main_name_visibility .fa-regular.fa-heart {
+  margin-left: 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 22px;
+  visibility: visible;
+}
+.main_header .main_name_visibility .fa-solid.fa-heart {
+  background: -webkit-radial-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
+  background: radial-gradient(circle at 33% 100%, rgba(238, 101, 215, 0.9607843137) 4%, #ba4dc4 30%, #bb2cf3 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  margin-left: 0px;
+  color: purple;
+  justify-content: flex-end;
+  font-size: 0px;
+  visibility: hidden;
+}
+.main_header .main_name_visibility:hover .fa-regular.fa-heart {
+  visibility: hidden;
+  font-size: 0px;
+}
+.main_header .main_name_visibility:hover .fa-solid.fa-heart {
+  visibility: visible;
+  font-size: 22px;
+}
+.main_header .fa-regular.fa-heart {
   margin-top: 10px;
-  margin-right: 20px;
+  margin-left: 60px;
   font-size: 26px;
   display: flex;
   justify-content: flex-end;
+}
+.main_header .fa-solid.fa-heart {
+  font-size: 26px;
+  display: flex;
+  visibility: hidden;
+  justify-content: flex-end;
+}
+.main_header .fa-regular.fa-heart.fa-heart:hover {
+  visibility: hidden;
+  background: -webkit-radial-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
+  background: radial-gradient(circle at 33% 100%, rgba(238, 101, 215, 0.9607843137) 4%, #ba4dc4 30%, #bb2cf3 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main .menu {
   width: 95%;
@@ -152,6 +339,7 @@
 }
 .main .menu_plat_container_list {
   display: flex;
+  overflow: hidden;
 }
 .main .menu_plat_container_list .menu_animation {
   display: flex;
@@ -172,7 +360,6 @@
 .main .menu_plat_container_list .anim_box .fa-circle-check {
   transition: 900ms;
   visibility: hidden;
-  overflow: hidden;
   width: 100%;
   display: flex;
   font-size: 25px;

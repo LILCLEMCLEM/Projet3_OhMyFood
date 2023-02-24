@@ -8,6 +8,117 @@ $color-tertiaire: #99E2D0;
 
 }
 
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+  
+    @return $randomNum;
+  }
+
+
+
+@keyframes anim_ustecils{
+    from{
+       
+        transform: rotate(0deg)
+    }
+    to{
+        
+        transform: rotate(360deg)
+    }
+   
+}
+
+
+
+
+@mixin SetPosition($number){
+    @for $number from 2 through 16{
+        &:nth-child(#{$number}){
+            
+            position:relative;
+            animation: anim_ustecils #{randomNum(1, 4)}s 0.5s infinite;
+           
+            font-size: 32px;
+            @if $number % 2 == 0 {
+                top: #{calc($number)* 10 }px;
+
+                left: -130px;
+ 
+            }
+
+
+            @if $number % 2 == 1 {
+               
+                left: +130px;
+                top: #{calc($number - 1)* 10 - 22 }px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
+
+
+
+.loader{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+    background-color: #99E2D0;
+    width: 100%;
+    height:188%;
+    
+    transition: 0s;
+         
+    animation: load 5s 3s;
+    
+    animation-fill-mode: forwards;
+
+    &_img{
+        margin-top: 15%;
+        margin-bottom: 15%;
+        width: 80%;
+        height: 60px;
+    }
+
+    & .fa-solid{
+       @include SetPosition(16);
+       
+       
+    }
+
+    &_name{
+        font-family: Roboto , Arial, Helvetica, sans-serif;
+        font-size: 26px;
+    }
+    
+}
+
+
+
+
+@keyframes load{
+    
+    10%{
+       
+        opacity: 10;
+        
+    }
+
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        
+    }
+    
+  
+}
+
 @keyframes fadein {
     
     from {
@@ -40,17 +151,6 @@ $color-tertiaire: #99E2D0;
         transform: translateY(0px);
     }
 }
-@-o-keyframes fadein { /* sur Opera */
-    
-    from {
-        opacity:0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 
 @mixin fade-transition(){
@@ -60,7 +160,7 @@ $color-tertiaire: #99E2D0;
            
             transition: 1s;
             
-            animation: fadein 1s #{1/4 *$i}s;
+            animation: fadein 1s #{calc(1/4) *$i}s;
             animation-fill-mode: forwards;
         }
     }
@@ -138,18 +238,83 @@ $color-tertiaire: #99E2D0;
             font-family: Shrikhand, Arial, Helvetica, sans-serif;
             font-weight: 400;
 
+            &_visibility{
+                
+                
+                
+    
+                & .fa-regular.fa-heart
+                {
+                    
+                    margin-left: 0px;
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 22px;
+                    visibility: visible;
+                    
+                }
+    
+                & .fa-solid.fa-heart{
+                    background: -webkit-radial-gradient(-10deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+                    background: radial-gradient(circle at 33% 100%, #ee65d7f5 4%, #ba4dc4 30%, #bb2cf3 62%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: flex;
+                    margin-left: 0px;
+                    color: purple;
+                    justify-content: flex-end;
+                    font-size: 0px;
+                    visibility: hidden;
+    
+                }
+            }
+    
+            &_visibility:hover
+            {
+                & .fa-regular.fa-heart{
+                    visibility: hidden;
+                    font-size: 0px;
+                }
+    
+                & .fa-solid.fa-heart{
+                    visibility: visible;
+                    font-size: 22px;
+                }
+            }
+
 
 
         }
 
-        .fa-heart {
+        .fa-regular.fa-heart {
             margin-top: 10px;
-            margin-right: 20px;
+            margin-left: 60px;
             font-size: 26px;
             display: flex;
             justify-content: flex-end;
 
 
+        }
+
+        .fa-solid.fa-heart {
+            
+            font-size: 26px;
+            display: flex;
+            
+            visibility: hidden;
+            justify-content: flex-end;
+
+
+        }
+
+        .fa-regular.fa-heart.fa-heart:hover{
+                visibility: hidden;
+                background: -webkit-radial-gradient(-10deg, #ee65d7f5 0%, #ba4dc4 50%, #b420ee 100%);
+                background: radial-gradient(circle at 33% 100%, #ee65d7f5 4%, #ba4dc4 30%, #bb2cf3 62%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
         }
 
     }
@@ -196,6 +361,7 @@ $color-tertiaire: #99E2D0;
 
                 &_list {
                     display: flex;
+                    overflow: hidden;
 
 
                     & .menu_animation {
@@ -224,7 +390,7 @@ $color-tertiaire: #99E2D0;
                         .fa-circle-check {
                             transition: 900ms;
                             visibility: hidden;
-                            overflow:hidden;
+                            
 
 
                             width: 100%;
