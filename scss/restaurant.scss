@@ -57,27 +57,17 @@ $color-tertiaire: #99E2D0;
 
 
 @mixin SetPosition($number){
-    @for $number from 2 through 16{
+    @for $number from 1 through 16{
         &:nth-child(#{$number}){
             
             position:relative;
             animation: anim_ustecils #{randomNum(1, 4)}s 0.5s infinite;
+            top :20px;
+            font-size: 18px;
+            left: #{ ($number*20)-70}px;
+
+
            
-            font-size: 32px;
-            @if $number % 2 == 0 {
-                top: #{calc($number)* 10 }px;
-
-                left: -130px;
- 
-            }
-
-
-            @if $number % 2 == 1 {
-               
-                left: +130px;
-                top: #{calc($number - 1)* 10 - 22 }px;
-                margin-bottom: 10px;
-            }
         }
 
     }
@@ -93,7 +83,7 @@ $color-tertiaire: #99E2D0;
     position: absolute;
     background-color: #99E2D0;
     width: 100%;
-    height:188%;
+    height:240%;
     
     transition: 0s;
          
@@ -115,8 +105,10 @@ $color-tertiaire: #99E2D0;
     }
 
     &_name{
-        font-family: Roboto , Arial, Helvetica, sans-serif;
-        font-size: 26px;
+        
+        margin-top: 140px;
+        font-family: Shrikhand , Arial, Helvetica, sans-serif;
+        font-size: 44px;
     }
     
 }
