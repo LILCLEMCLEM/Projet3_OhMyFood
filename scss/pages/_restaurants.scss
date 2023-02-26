@@ -13,14 +13,15 @@
         height: 55px;
         display: grid;
         align-items: center;    
-        width: 90%;
+        width: 100%;
        
        & .fa-arrow-left
        {
-
+            margin-left: 20px;
             display: flex;
             position: relative;
             top: -35px;
+            
             
             
        
@@ -62,6 +63,7 @@
                 }
 
                 & .fa-arrow-left{
+                    margin-left: 20px;
                     font-size: 40px;
                     top: -60px
 
@@ -75,6 +77,8 @@
             
             
     }
+
+    
 
 
 }
