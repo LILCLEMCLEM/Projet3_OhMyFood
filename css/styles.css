@@ -188,7 +188,7 @@
   font-weight: 300;
   bottom: 0;
   border-bottom: 3px solid #99E2D0;
-  width: 10%;
+  width: 60px;
   margin-bottom: 2px;
 }
 .main .menu_plat_container {
@@ -337,6 +337,7 @@
   }
   .main .menu_plat .menu_title {
     font-size: 36px;
+    width: 100px;
   }
   .main .menu_plat_container {
     height: 120px;
@@ -408,49 +409,49 @@
 }
 .loader .fa-solid:nth-child(3) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -10px;
 }
 .loader .fa-solid:nth-child(4) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 10px;
 }
 .loader .fa-solid:nth-child(5) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 30px;
 }
 .loader .fa-solid:nth-child(6) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 50px;
 }
 .loader .fa-solid:nth-child(7) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 70px;
 }
 .loader .fa-solid:nth-child(8) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 90px;
 }
 .loader .fa-solid:nth-child(9) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 110px;
@@ -613,7 +614,7 @@
     font-size: 30px;
   }
   .header__font_text.localisation {
-    font-size: 26px;
+    font-size: 22px;
   }
   .header__font_text.banniere {
     margin-top: 10px;
@@ -622,6 +623,9 @@
   .header__button {
     height: 60px;
     font-size: 26px;
+  }
+  .header__explore {
+    box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -878,6 +882,7 @@
   margin-left: 10px;
   font-size: 14px;
   color: white;
+  text-decoration: none;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .footer_element .footer_text:nth-child(1) {

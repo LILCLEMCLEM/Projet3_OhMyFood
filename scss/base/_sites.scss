@@ -171,7 +171,7 @@
 
         &__font_text{
             &.localisation{
-                font-size: 26px;
+                font-size: 22px;
 
             }
 
@@ -184,6 +184,10 @@
         &__button{
             height: 60px;
             font-size: 26px;
+        }
+
+        &__explore{
+            box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
         }
 
     }
@@ -527,6 +531,7 @@
             margin-left: 10px;
             font-size: 14px;
             color: white;
+            text-decoration: none;
             font-family: 'Roboto' , Arial, Helvetica, sans-serif;
         }
 
@@ -552,6 +557,7 @@
             }
 
             .footer_text{
+                
                 font-size: 26px;
                 margin-left: 30px;
             }

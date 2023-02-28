@@ -187,12 +187,14 @@
 
                 bottom: 0;
                 border-bottom: 3px solid #99E2D0;
-                width: 10%;
+                width: 60px;
                 margin-bottom: 2px;
-
+                
+                    
 
             }
-            
+
+           
 
             &_container {
                 opacity: 0;
@@ -403,6 +405,7 @@
                 & .menu_title
                 {
                     font-size: 36px;
+                    width: 100px;
                 }
 
                 &_container {
@@ -453,5 +456,7 @@
             height: 65px;
         }
     }
+
+    
 }
 
