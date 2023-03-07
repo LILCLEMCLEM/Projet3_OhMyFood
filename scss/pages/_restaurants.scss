@@ -216,6 +216,11 @@
                     & .menu_animation {
                         display: flex;
                         flex-direction: column;
+                        white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+
                         width: 100%;
                     }
 
@@ -250,23 +255,18 @@
 
                         }
 
-                       
-
-
-
-
 
                     }
 
                     
 
-                    
-
-
 
                     & .menu_text {
-                        margin-top: 10px;
                         overflow: hidden;
+                        text-overflow: ellipsis;
+                        height: 24px;
+                        margin-top: 10px;
+                       
                         margin-left: 10px;
                         font-family: Roboto, Arial, Helvetica, sans-serif;
                         font-size: 20px;
@@ -279,13 +279,16 @@
                         flex-direction: row;
                         justify-content: space-between;
 
-                        width: 90%;
+                        
                         font-family: Roboto, Arial, Helvetica, sans-serif;
 
                         & .menu_ingredient {
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
+                            
                             overflow: hidden;
+                            text-overflow: ellipsis;
+                            
+                            
+                            
                             
 
                             margin-left: 10px;
@@ -294,6 +297,7 @@
 
                         & .menu_price {
                             font-weight: 700;
+                            margin-right: 10px;
 
                         }
                     }
@@ -303,6 +307,8 @@
                     {
                         & .anim_box{
                             width: 70px;
+                            
+                            
 
                             & .fa-circle-check{
                                 visibility: visible;

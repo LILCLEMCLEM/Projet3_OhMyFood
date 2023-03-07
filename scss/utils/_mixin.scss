@@ -129,7 +129,7 @@
 
 @mixin fade-transition(){
     
-    @for $i from 1 through 4 {
+    @for $i from 1 through 6 {
         &:nth-child(#{$i}){
            
             transition: 1s;

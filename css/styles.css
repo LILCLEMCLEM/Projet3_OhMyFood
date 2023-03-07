@@ -219,6 +219,16 @@
   animation: fadein 1s 1s;
   animation-fill-mode: forwards;
 }
+.main .menu_plat_container:nth-child(5) {
+  transition: 1s;
+  animation: fadein 1s 1.25s;
+  animation-fill-mode: forwards;
+}
+.main .menu_plat_container:nth-child(6) {
+  transition: 1s;
+  animation: fadein 1s 1.5s;
+  animation-fill-mode: forwards;
+}
 .main .menu_plat_container_list {
   display: flex;
   overflow: hidden;
@@ -226,6 +236,9 @@
 .main .menu_plat_container_list .menu_animation {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .main .menu_plat_container_list .anim_box {
@@ -249,8 +262,10 @@
   justify-content: center;
 }
 .main .menu_plat_container_list .menu_text {
-  margin-top: 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  height: 24px;
+  margin-top: 10px;
   margin-left: 10px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -261,17 +276,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 .main .menu_plat_container_list .menu_items .menu_ingredient {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   margin-left: 10px;
 }
 .main .menu_plat_container_list .menu_items .menu_price {
   font-weight: 700;
+  margin-right: 10px;
 }
 .main .menu_plat_container_list:hover .anim_box {
   width: 70px;
@@ -395,35 +409,35 @@
 }
 .loader .fa-solid:nth-child(1) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -50px;
 }
 .loader .fa-solid:nth-child(2) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -30px;
 }
 .loader .fa-solid:nth-child(3) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -10px;
 }
 .loader .fa-solid:nth-child(4) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 10px;
 }
 .loader .fa-solid:nth-child(5) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 30px;
@@ -437,21 +451,21 @@
 }
 .loader .fa-solid:nth-child(7) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 70px;
 }
 .loader .fa-solid:nth-child(8) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 90px;
 }
 .loader .fa-solid:nth-child(9) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 110px;
@@ -472,21 +486,21 @@
 }
 .loader .fa-solid:nth-child(12) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 170px;
 }
 .loader .fa-solid:nth-child(13) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 190px;
 }
 .loader .fa-solid:nth-child(14) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 210px;
@@ -500,7 +514,7 @@
 }
 .loader .fa-solid:nth-child(16) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 250px;
