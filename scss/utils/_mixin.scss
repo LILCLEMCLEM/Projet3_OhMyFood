@@ -1,141 +1,107 @@
 @function randomNum($min, $max) {
-    $rand: random();
-    $randomNum: $min + floor($rand * (($max - $min) + 1));
-  
-    @return $randomNum;
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+@keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes anim_ustecils {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin SetPosition($number) {
+  @for $number from 1 through 16 {
+    &:nth-child(#{$number}) {
+      position: relative;
+      animation: anim_ustecils #{randomNum(1, 4)}s 0.5s infinite;
+      top: 20px;
+      font-size: 18px;
+      left: #{($number * 20)-70}px;
+    }
+  }
+}
+
+@keyframes load {
+  10% {
+    opacity: 10;
   }
 
-
-
-@keyframes anim_ustecils{
-    from{
-       
-        transform: rotate(0deg)
-    }
-    to{
-        
-        transform: rotate(360deg)
-    }
-   
-}
-
-@-webkit-keyframes anim_ustecils{
-    from{
-       
-        transform: rotate(0deg)
-    }
-    to{
-        
-        transform: rotate(360deg)
-    }
-   
-}
-
-@-moz-keyframes anim_ustecils{
-    from{
-       
-        transform: rotate(0deg)
-    }
-    to{
-        
-        transform: rotate(360deg)
-        
-    }
-   
-}
-
-
-
-
-
-
-@mixin SetPosition($number){
-    @for $number from 1 through 16{
-        &:nth-child(#{$number}){
-            
-            position:relative;
-            animation: anim_ustecils #{randomNum(1, 4)}s 0.5s infinite;
-            top :20px;
-            font-size: 18px;
-            left: #{ ($number*20)-70}px;
-
-
-           
-        }
-
-    }
-}
-
-
-
-
-
-@keyframes load{
-    
-    10%{
-       
-        opacity: 10;
-        
-    }
-
-    50%{
-        opacity: 0;
-        width: 100%;
-        height: 280%;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-        width: 0;
-        height: 0;
-    }
-    
-  
+  50% {
+    opacity: 0;
+    width: 100%;
+    height: 280%;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 }
 
 @keyframes fadein {
-    
-    from {
-        opacity:0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
+@mixin fade-transition() {
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      transition: 1s;
 
-@mixin fade-transition(){
-    
-    @for $i from 1 through 6 {
-        &:nth-child(#{$i}){
-           
-            transition: 1s;
-            
-            animation: fadein 1s #{calc(1/4) *$i}s;
-            animation-fill-mode: forwards;
-        }
+      animation: fadein 1s #{calc(1 / 4) * $i}s;
+      animation-fill-mode: forwards;
     }
+  }
 }

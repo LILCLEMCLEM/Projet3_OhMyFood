@@ -409,42 +409,42 @@
 }
 .loader .fa-solid:nth-child(1) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -50px;
 }
 .loader .fa-solid:nth-child(2) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -30px;
 }
 .loader .fa-solid:nth-child(3) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -10px;
 }
 .loader .fa-solid:nth-child(4) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 10px;
 }
 .loader .fa-solid:nth-child(5) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 30px;
 }
 .loader .fa-solid:nth-child(6) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 50px;
@@ -458,42 +458,42 @@
 }
 .loader .fa-solid:nth-child(8) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 90px;
 }
 .loader .fa-solid:nth-child(9) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 110px;
 }
 .loader .fa-solid:nth-child(10) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 130px;
 }
 .loader .fa-solid:nth-child(11) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 150px;
 }
 .loader .fa-solid:nth-child(12) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 170px;
 }
 .loader .fa-solid:nth-child(13) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 190px;
