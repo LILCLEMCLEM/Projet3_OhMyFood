@@ -48,7 +48,8 @@
     transform: translateY(0px);
   }
 }
-@-moz-keyframes fadein { /* sur Firefox */
+@-moz-keyframes fadein {
+  /* sur Firefox */
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -58,7 +59,8 @@
     transform: translateY(0px);
   }
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -153,14 +155,14 @@
   visibility: visible;
 }
 .main_header .main_name_visibility .fa-solid.fa-heart {
-  background: -webkit-radial-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: radial-gradient(circle at 33% 100%, rgba(238, 101, 215, 0.9607843137) 4%, #ba4dc4 30%, #bb2cf3 62%);
+  background: -webkit-radial-gradient(-10deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: radial-gradient(circle at 33% 100%, #ff79da 0%, #ba4dc4 50%, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   margin-left: 0px;
-  color: purple;
+  color: #9356dc;
   justify-content: flex-end;
   font-size: 0px;
   visibility: hidden;
@@ -187,7 +189,7 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 300;
   bottom: 0;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
   width: 60px;
   margin-bottom: 2px;
 }
@@ -249,7 +251,7 @@
   width: 0px;
   height: 70px;
   visibility: visible;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: white;
 }
 .main .menu_plat_container_list .anim_box .fa-circle-check {
@@ -305,9 +307,9 @@
   color: #f3f3f3;
   font-size: 16px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background: -moz-linear-gradient(-100%, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: -webkit-linear-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: linear-gradient(175deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
+  background: -moz-linear-gradient(-100%, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: -webkit-linear-gradient(-10deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: linear-gradient(175deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
   box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2);
 }
 .main__button:hover {
@@ -328,8 +330,8 @@
     visibility: visible;
   }
   .main_header .main_name_visibility .fa-solid.fa-heart {
-    background: -webkit-radial-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-    background: radial-gradient(circle at 33% 100%, rgba(238, 101, 215, 0.9607843137) 4%, #ba4dc4 30%, #bb2cf3 62%);
+    background: -webkit-radial-gradient(-10deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
+    background: radial-gradient(circle at 33% 100%, #ff79da 0%, #ba4dc4 50%, #9356dc);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -394,7 +396,7 @@
   align-items: center;
   z-index: 1000;
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 100%;
   height: 240%;
   transition: 0s;
@@ -409,14 +411,14 @@
 }
 .loader .fa-solid:nth-child(1) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -50px;
 }
 .loader .fa-solid:nth-child(2) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: -30px;
@@ -430,35 +432,35 @@
 }
 .loader .fa-solid:nth-child(4) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 10px;
 }
 .loader .fa-solid:nth-child(5) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 30px;
 }
 .loader .fa-solid:nth-child(6) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 50px;
 }
 .loader .fa-solid:nth-child(7) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 70px;
 }
 .loader .fa-solid:nth-child(8) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 90px;
@@ -472,49 +474,49 @@
 }
 .loader .fa-solid:nth-child(10) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 130px;
 }
 .loader .fa-solid:nth-child(11) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 150px;
 }
 .loader .fa-solid:nth-child(12) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 4s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 170px;
 }
 .loader .fa-solid:nth-child(13) {
   position: relative;
-  animation: anim_ustecils 1s 0.5s infinite;
+  animation: anim_ustecils 3s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 190px;
 }
 .loader .fa-solid:nth-child(14) {
   position: relative;
-  animation: anim_ustecils 4s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 210px;
 }
 .loader .fa-solid:nth-child(15) {
   position: relative;
-  animation: anim_ustecils 3s 0.5s infinite;
+  animation: anim_ustecils 2s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 230px;
 }
 .loader .fa-solid:nth-child(16) {
   position: relative;
-  animation: anim_ustecils 2s 0.5s infinite;
+  animation: anim_ustecils 1s 0.5s infinite;
   top: 20px;
   font-size: 18px;
   left: 250px;
@@ -562,9 +564,9 @@
   color: #f3f3f3;
   font-size: 16px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background: -moz-linear-gradient(-100%, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: -webkit-linear-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: linear-gradient(175deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
+  background: -moz-linear-gradient(-100%, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: -webkit-linear-gradient(-10deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: linear-gradient(175deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
   box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2);
 }
 .header__button:hover {
@@ -760,14 +762,14 @@
 .Restaurant .Restaurant_new {
   font-size: 14px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #27866e;
+  color: #1b6150;
   position: relative;
   top: 40px;
   left: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 80px;
   height: 30px;
   border-radius: 0.1cm;
@@ -797,13 +799,13 @@
   visibility: visible;
 }
 .Restaurant_box_visibility .fa-solid.fa-heart {
-  background: -webkit-radial-gradient(-10deg, rgba(238, 101, 215, 0.9607843137) 0%, #ba4dc4 50%, #b420ee 100%);
-  background: radial-gradient(circle at 33% 100%, rgba(238, 101, 215, 0.9607843137) 4%, #ba4dc4 30%, #bb2cf3 62%);
+  background: -webkit-radial-gradient(-10deg, #ff79da 0%, #ba4dc4 50%, #9356dc);
+  background: radial-gradient(circle at 33% 100%, #ff79da 0%, #ba4dc4 50%, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
-  color: purple;
+  color: #9356dc;
   justify-content: end;
   font-size: 0px;
   visibility: hidden;

@@ -83,22 +83,22 @@
         & .fa-solid.fa-heart {
           background: -webkit-radial-gradient(
             -10deg,
-            #ee65d7f5 0%,
+            map-get($color_map, color-secondaire) 0%,
             #ba4dc4 50%,
-            #b420ee 100%
+            map-get($color_map, color-primaire)
           );
           background: radial-gradient(
             circle at 33% 100%,
-            #ee65d7f5 4%,
-            #ba4dc4 30%,
-            #bb2cf3 62%
+            map-get($color_map, color-secondaire) 0%,
+            #ba4dc4 50%,
+            map-get($color_map, color-primaire)
           );
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
           display: flex;
           margin-left: 0px;
-          color: purple;
+          color: map-get($color_map , color-primaire);
           justify-content: flex-end;
           font-size: 0px;
           visibility: hidden;
@@ -225,21 +225,21 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     background: -moz-linear-gradient(
       -100%,
-      #ee65d7f5 0%,
+      map-get($color_map , color-secondaire) 0%,
       #ba4dc4 50%,
-      #b420ee 100%
+      map-get($color_map , color-primaire)
     );
     background: -webkit-linear-gradient(
       -10deg,
-      #ee65d7f5 0%,
+      map-get($color_map , color-secondaire) 0%,
       #ba4dc4 50%,
-      #b420ee 100%
+      map-get($color_map , color-primaire)
     );
     background: linear-gradient(
       175deg,
-      #ee65d7f5 0%,
+      map-get($color_map , color-secondaire) 0%,
       #ba4dc4 50%,
-      #b420ee 100%
+      map-get($color_map , color-primaire)
     );
     box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2);
   }
@@ -268,15 +268,15 @@
           & .fa-solid.fa-heart {
             background: -webkit-radial-gradient(
               -10deg,
-              #ee65d7f5 0%,
+              map-get($color_map , color-secondaire) 0%,
               #ba4dc4 50%,
-              #b420ee 100%
+              map-get($color_map , color-primaire)
             );
             background: radial-gradient(
               circle at 33% 100%,
-              #ee65d7f5 4%,
-              #ba4dc4 30%,
-              #bb2cf3 62%
+              map-get($color_map , color-secondaire) 0%,
+              #ba4dc4 50%,
+              map-get($color_map , color-primaire)
             );
             -webkit-background-clip: text;
             background-clip: text;
